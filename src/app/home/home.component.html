@@ -1,0 +1,65 @@
+<header class="bg-home">
+  <!-- NavBar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <img src="../../assets/img/logo-soho.png" alt="" />
+    <div class="ms-auto">
+      <ul class="d-flex flex-row-reverse">
+        <li>
+          <a class="nav-link active text-light" routerLink="/Contacto" routerLinkActive="active" aria-current="page"  >Contacto</a>
+        </li>
+        <li>
+          <a routerLink="/Casos" class="nav-link active text-light" aria-current="page" >Casos de exito</a>
+        </li>
+        <li class="nav-item active">
+          <a routerLink="/Servicios" class="nav-link text-light">Servicios</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/Nosotros" class="nav-link text-light">Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="" class="nav-link text-light">Inicio</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Mensaje Home -->
+  <div class="text-center home-content">
+    <div class="items-content">
+      <h2 class="text-light">Nos especializamos en</h2>
+      <h1 class="text-green">interfaces digitales que los usuarios aman</h1>
+      <br />
+      <button class="btn btn-success btn-home">Hablemos de tu proyecto.</button>
+    </div>
+  </div>
+  <router-outlet></router-outlet>
+</header>
+
+<!-- EVENT MESSAGE -->
+<div class="event-message">
+  <div class="d-flex align-items-center container ">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="40"
+      height="40"
+      fill="currentColor"
+      class="bi bi-broadcast"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="M3.05 3.05a7 7 0 0 0 0 9.9.5.5 0 0 1-.707.707 8 8 0 0 1 0-11.314.5.5 0 0 1 .707.707zm2.122 2.122a4 4 0 0 0 0 5.656.5.5 0 1 1-.708.708 5 5 0 0 1 0-7.072.5.5 0 0 1 .708.708zm5.656-.708a.5.5 0 0 1 .708 0 5 5 0 0 1 0 7.072.5.5 0 1 1-.708-.708 4 4 0 0 0 0-5.656.5.5 0 0 1 0-.708zm2.122-2.12a.5.5 0 0 1 .707 0 8 8 0 0 1 0 11.313.5.5 0 0 1-.707-.707 7 7 0 0 0 0-9.9.5.5 0 0 1 0-.707zM10 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0z"
+      />
+    </svg>
+      <div class="d-flex align-items-center justify-content-between container text-message">
+        <p><strong>EN DIRECTO</strong></p>
+        <p>- SOHO está presente en el</p>
+        <p><strong>DIGITALBANK MOTEVIDEO.</strong></p>
+        <p>"Experiencia de Usuario" por Alvaro Añon (SEO de Soho).</p>
+        <button class="btn btn-event">Ver evento</button>
+        <button class="btn btn-outline-success">Proximos eventos</button>
+      </div>
+  </div>
+</div>
+<app-about></app-about>
+<app-service> </app-service>
+

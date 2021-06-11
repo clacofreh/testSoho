@@ -1,0 +1,28 @@
+@mixin _box($fondo)
+    display: inline-block
+    background-color: $fondo 
+    text-align: center
+    justify-content: center
+    align-items: center
+@mixin _text($color, $margen, $fontSize)
+    color: $color
+    margin: $margen
+    font-size: $fontSize
+h4  
+    @include _text(#02B300, 20% 20% 0 20%, 1.1rem)
+p
+    @include _text(white, 5% 10% 20% 10%, 0.9rem)
+
+.service_section
+    height: 40vh
+    align-items: center
+    align-content: center
+.box_1
+    @include _box(#3B4148)  
+.box_2
+    @include _box(#161C21   )
+.box_3
+    @include _box(#202A37)
+div .col
+    height: 50vh
+    
